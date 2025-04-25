@@ -1,0 +1,9 @@
+*/bin/*
+*/obj/*
+_ReSharper.*/
+*.user
+*.suo
+/.vs/QuickAcid/v15/Server/sqlite3
+/packages
+**/log*.txt
+temp.md
