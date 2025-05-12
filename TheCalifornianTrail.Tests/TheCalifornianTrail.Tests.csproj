@@ -9,9 +9,13 @@
 
   <ItemGroup>
     <PackageReference Include="coverlet.collector" Version="6.0.2" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
-    <PackageReference Include="xunit" Version="2.9.2" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.4" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.0.2">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +24,15 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TheCalifornianTrail.Core\TheCalifornianTrail.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <Reference Include="QuickMGenerate">
+          <HintPath>../Libs/QuickMGenerate.dll</HintPath>
+      </Reference>
+      <Reference Include="QuickAcid">
+          <HintPath>../Libs/QuickAcid.dll</HintPath>
+      </Reference>
   </ItemGroup>
 
 </Project>
